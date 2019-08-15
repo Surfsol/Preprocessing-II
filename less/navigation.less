@@ -1,1 +1,26 @@
 // Navigation Styles here
+nav {
+  border-bottom: 1px dashed @navigation-border;
+
+  .nav-top {
+    .flex(space-between, center);
+    .container;
+    margin-top: 2%;
+    margin-bottom: 1.5%;
+
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+    }
+    .nav-bar {
+      .flex(space-around, center);
+
+      a {
+        color: black;
+        text-decoration: none;
+        margin: 10px; /*space between a*/
+        font-size: 2rem;
+      }
+    }
+  }
+}
